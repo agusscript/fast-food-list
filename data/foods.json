@@ -98,5 +98,23 @@
     "precio": 470,
     "calorias": 230,
     "vegana": false
+  },
+  {
+    "id": 9,
+    "nombre": "Guiso de arroz",
+    "ingredientes": null,
+    "tiempo": 45,
+    "precio": 540,
+    "calorias": 300,
+    "vegana": false
+  },
+  {
+    "id": 10,
+    "nombre": "Tofu",
+    "ingredientes": null,
+    "tiempo": 20,
+    "precio": 780,
+    "calorias": 310,
+    "vegana": true
   }
 ]

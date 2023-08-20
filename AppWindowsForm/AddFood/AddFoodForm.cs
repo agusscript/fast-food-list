@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppWindowsForm.Entities;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
@@ -25,7 +26,6 @@ namespace AppWindowsForm
             string timeValue = TimeFoodText.Text;
             string caloriesValue = CaloriesFoodText.Text;
             bool veganYesRadioBtn = VeganFoodYesRadioBtn.Checked;
-            bool veganNoRadioBtn = VeganFoodNoRadioBtn.Checked;
 
             listFoods.Add(new Food
             {
@@ -34,6 +34,7 @@ namespace AppWindowsForm
                 tiempo = int.Parse(timeValue),
                 precio = int.Parse(priceValue),
                 calorias = int.Parse(caloriesValue),
+                vegana = veganYesRadioBtn,
             });
 
             string newFoodData = JsonSerializer.Serialize(listFoods);

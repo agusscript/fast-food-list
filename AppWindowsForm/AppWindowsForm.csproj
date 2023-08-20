@@ -74,17 +74,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddFoodForm.cs">
+    <Compile Include="AddFood\AddFoodForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddFoodForm.Designer.cs">
+    <Compile Include="AddFood\AddFoodForm.Designer.cs">
       <DependentUpon>AddFoodForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Food.cs" />
-    <Compile Include="ViewFoodListForm.cs">
+    <Compile Include="Entities\Food.cs" />
+    <Compile Include="ViewFood\ViewFoodListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewFoodListForm.Designer.cs">
+    <Compile Include="ViewFood\ViewFoodListForm.Designer.cs">
       <DependentUpon>ViewFoodListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
@@ -95,10 +95,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddFoodForm.resx">
+    <EmbeddedResource Include="AddFood\AddFoodForm.resx">
       <DependentUpon>AddFoodForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewFoodListForm.resx">
+    <EmbeddedResource Include="ViewFood\ViewFoodListForm.resx">
       <DependentUpon>ViewFoodListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">

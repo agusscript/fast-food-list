@@ -1,6 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace AppWindowsForm
+namespace AppWindowsForm.Entities
 {
     internal class Food
     {
@@ -11,6 +15,5 @@ namespace AppWindowsForm
         public int precio { get; set; }
         public int calorias { get; set; }
         public bool vegana { get; set; }
-
     }
 }
