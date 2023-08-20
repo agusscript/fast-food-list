@@ -20,11 +20,6 @@ namespace AppWindowsForm
             List<Food> listFoods = JsonSerializer.Deserialize<List<Food>>(foodsData);
 
             foodsDataGrid.DataSource = listFoods;
-
-            //foreach (Food food in listFoods)
-            //{
-            //    MessageBox.Show(food.nombre);
-            //}
         }
     }
 }

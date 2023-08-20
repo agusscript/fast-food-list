@@ -30,12 +30,13 @@
         {
             this.TitleLabel = new System.Windows.Forms.Label();
             this.ShowFoodsBtn = new System.Windows.Forms.Button();
+            this.AddFoodsBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TitleLabel
             // 
             this.TitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.Location = new System.Drawing.Point(233, 28);
+            this.TitleLabel.Location = new System.Drawing.Point(222, 29);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(216, 31);
             this.TitleLabel.TabIndex = 0;
@@ -45,7 +46,7 @@
             // 
             this.ShowFoodsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowFoodsBtn.ForeColor = System.Drawing.Color.Black;
-            this.ShowFoodsBtn.Location = new System.Drawing.Point(256, 126);
+            this.ShowFoodsBtn.Location = new System.Drawing.Point(254, 111);
             this.ShowFoodsBtn.Name = "ShowFoodsBtn";
             this.ShowFoodsBtn.Size = new System.Drawing.Size(136, 23);
             this.ShowFoodsBtn.TabIndex = 1;
@@ -53,11 +54,23 @@
             this.ShowFoodsBtn.UseVisualStyleBackColor = true;
             this.ShowFoodsBtn.Click += new System.EventHandler(this.ShowFoodsBtn_Click);
             // 
+            // AddFoodsBtn
+            // 
+            this.AddFoodsBtn.ForeColor = System.Drawing.Color.Black;
+            this.AddFoodsBtn.Location = new System.Drawing.Point(254, 165);
+            this.AddFoodsBtn.Name = "AddFoodsBtn";
+            this.AddFoodsBtn.Size = new System.Drawing.Size(136, 23);
+            this.AddFoodsBtn.TabIndex = 2;
+            this.AddFoodsBtn.Text = "Add Foods";
+            this.AddFoodsBtn.UseVisualStyleBackColor = true;
+            this.AddFoodsBtn.Click += new System.EventHandler(this.AddFoodsBtn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 371);
+            this.ClientSize = new System.Drawing.Size(665, 371);
+            this.Controls.Add(this.AddFoodsBtn);
             this.Controls.Add(this.ShowFoodsBtn);
             this.Controls.Add(this.TitleLabel);
             this.ForeColor = System.Drawing.Color.DarkBlue;
@@ -72,5 +85,6 @@
 
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.Button ShowFoodsBtn;
+        private System.Windows.Forms.Button AddFoodsBtn;
     }
 }

@@ -2,7 +2,15 @@
   {
     "id": 0,
     "nombre": "Empanadas de Jamon y queso",
-    "ingredientes": ["harina", "agua", "carne", "cebolla", "sal", "morron", "ajo"],
+    "ingredientes": [
+      "harina",
+      "agua",
+      "carne",
+      "cebolla",
+      "sal",
+      "morron",
+      "ajo"
+    ],
     "tiempo": 20,
     "precio": 350,
     "calorias": 100,
@@ -11,7 +19,15 @@
   {
     "id": 1,
     "nombre": "Tortilla de papas",
-    "ingredientes": ["papa", "cebolla", "huevo", "ajo", "sal", "aceite", "pimienta"],
+    "ingredientes": [
+      "papa",
+      "cebolla",
+      "huevo",
+      "ajo",
+      "sal",
+      "aceite",
+      "pimienta"
+    ],
     "tiempo": 20,
     "precio": 1350,
     "calorias": 180,
@@ -20,7 +36,13 @@
   {
     "id": 2,
     "nombre": "Salsa pesto",
-    "ingredientes": ["albahaca", "ajo", "sal", "aceite", "queso rallado"],
+    "ingredientes": [
+      "albahaca",
+      "ajo",
+      "sal",
+      "aceite",
+      "queso rallado"
+    ],
     "tiempo": 90,
     "precio": 950,
     "calorias": 180,
@@ -29,7 +51,11 @@
   {
     "id": 4,
     "nombre": "Licuado de banana",
-    "ingredientes": ["banana", "agua", "azucar"],
+    "ingredientes": [
+      "banana",
+      "agua",
+      "azucar"
+    ],
     "tiempo": 10,
     "precio": 800,
     "calorias": 380,
@@ -38,7 +64,9 @@
   {
     "id": 5,
     "nombre": "Jugo de naranja",
-    "ingredientes": ["naranja"],
+    "ingredientes": [
+      "naranja"
+    ],
     "tiempo": 5,
     "precio": 500,
     "calorias": 380,
@@ -46,11 +74,29 @@
   },
   {
     "id": 6,
-    "nombre": "Licuado de manzana",
-    "ingredientes": ["banana", "leche", "azucar"],
-    "tiempo": 10,
-    "precio": 800,
-    "calorias": 380,
+    "nombre": "Tarta de pescado",
+    "ingredientes": null,
+    "tiempo": 45,
+    "precio": 280,
+    "calorias": 190,
+    "vegana": false
+  },
+  {
+    "id": 7,
+    "nombre": "Sushi",
+    "ingredientes": null,
+    "tiempo": 35,
+    "precio": 1250,
+    "calorias": 320,
+    "vegana": false
+  },
+  {
+    "id": 8,
+    "nombre": "\u00D1oquis",
+    "ingredientes": null,
+    "tiempo": 45,
+    "precio": 470,
+    "calorias": 230,
     "vegana": false
   }
 ]

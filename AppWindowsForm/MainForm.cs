@@ -15,6 +15,12 @@ namespace AppWindowsForm
             ViewFoodsForm viewFoodsForm = new ViewFoodsForm();
             viewFoodsForm.ShowDialog();
         }
+
+        private void AddFoodsBtn_Click(object sender, EventArgs e)
+        {
+            AddFoodForm addFoodsForm = new AddFoodForm();
+            addFoodsForm.ShowDialog();
+        }
     }
 }
 
