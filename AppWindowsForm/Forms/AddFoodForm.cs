@@ -1,5 +1,6 @@
 ﻿using AppWindowsForm.Entities;
 using System;
+using System.Text.Json;
 using System.Windows.Forms;
 
 namespace AppWindowsForm
@@ -29,11 +30,11 @@ namespace AppWindowsForm
                 Vegan = veganYesRadioBtn,
             });
 
-            //string newFoodData = JsonSerializer.Serialize(FoodRepository.Foods);
+            string newFoodData = JsonSerializer.Serialize(FoodRepository.Foods);
 
-            //File.WriteAllText(foodsJsonFilePath, newFoodData);
+            JsonFile.Save(newFoodData);
 
-            MessageBox.Show("The new food was successfully added to the menu.");
+            MessageBox.Show("The new food was successfully added to the menu.", "Add Food");
 
             this.Close();
         }
