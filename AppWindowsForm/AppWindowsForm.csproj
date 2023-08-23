@@ -74,34 +74,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddFood\AddFoodForm.cs">
+    <Compile Include="Entities\FoodRepository.cs" />
+    <Compile Include="Forms\AddFoodForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddFood\AddFoodForm.Designer.cs">
+    <Compile Include="Forms\AddFoodForm.Designer.cs">
       <DependentUpon>AddFoodForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Food.cs" />
-    <Compile Include="ViewFood\ViewFoodListForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewFood\ViewFoodListForm.Designer.cs">
-      <DependentUpon>ViewFoodListForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddFood\AddFoodForm.resx">
+    <EmbeddedResource Include="Forms\AddFoodForm.resx">
       <DependentUpon>AddFoodForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewFood\ViewFoodListForm.resx">
-      <DependentUpon>ViewFoodListForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

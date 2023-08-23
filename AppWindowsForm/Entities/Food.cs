@@ -8,12 +8,11 @@ namespace AppWindowsForm.Entities
 {
     internal class Food
     {
-        public int id { get; set; }
-        public string nombre { get; set; }
-        public List<string> ingredientes { get; set; }
-        public int tiempo { get; set; }
-        public int precio { get; set; }
-        public int calorias { get; set; }
-        public bool vegana { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Time { get; set; }
+        public int Price { get; set; }
+        public int Calories { get; set; }
+        public bool Vegan { get; set; }
     }
 }
