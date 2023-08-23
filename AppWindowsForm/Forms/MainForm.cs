@@ -19,7 +19,7 @@ namespace AppWindowsForm
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 JsonFile.Data = openFileDialog.FileName;
-                MessageBox.Show("The json file was selected correctly.", "Json file Select");
+                MessageBox.Show("The json file was selected correctly.", "Json file Select", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

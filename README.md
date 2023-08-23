@@ -14,8 +14,6 @@ De las comidas rápidas que ofrecen en el menú:
 
 ● Precio (en Pesos Argentinos).
 
-● Lista de ingredientes (de uno a varios ingredientes).
-
 ● Tiempo de elaboración (en minutos).
 
 ● Calorías (en gramos).
@@ -38,14 +36,4 @@ adjuntamos un ejemplo):
 ● Modificar los datos existentes.
 
 ● Borrar una seleccionada.
- ````
-2. Funciones de búsqueda de comidas rápidas a partir de los siguientes criterios:
-  ````
-● Buscar por ingrediente.
-
-● Buscar por precio.
-
-● Buscar por calorías.
-
-● Las comidas veganas disponibles.
  ````

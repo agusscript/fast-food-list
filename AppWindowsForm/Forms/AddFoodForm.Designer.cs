@@ -75,7 +75,7 @@
             // 
             this.TimeFoodLabel.AutoSize = true;
             this.TimeFoodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeFoodLabel.Location = new System.Drawing.Point(125, 163);
+            this.TimeFoodLabel.Location = new System.Drawing.Point(125, 121);
             this.TimeFoodLabel.Name = "TimeFoodLabel";
             this.TimeFoodLabel.Size = new System.Drawing.Size(102, 17);
             this.TimeFoodLabel.TabIndex = 8;
@@ -85,7 +85,7 @@
             // 
             this.PriceFoodLabel.AutoSize = true;
             this.PriceFoodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriceFoodLabel.Location = new System.Drawing.Point(187, 120);
+            this.PriceFoodLabel.Location = new System.Drawing.Point(182, 161);
             this.PriceFoodLabel.Name = "PriceFoodLabel";
             this.PriceFoodLabel.Size = new System.Drawing.Size(40, 17);
             this.PriceFoodLabel.TabIndex = 10;
@@ -116,6 +116,7 @@
             // VeganFoodNoRadioBtn
             // 
             this.VeganFoodNoRadioBtn.AutoSize = true;
+            this.VeganFoodNoRadioBtn.Checked = true;
             this.VeganFoodNoRadioBtn.Location = new System.Drawing.Point(159, 19);
             this.VeganFoodNoRadioBtn.Name = "VeganFoodNoRadioBtn";
             this.VeganFoodNoRadioBtn.Size = new System.Drawing.Size(44, 21);
@@ -131,13 +132,12 @@
             this.VeganFoodYesRadioBtn.Name = "VeganFoodYesRadioBtn";
             this.VeganFoodYesRadioBtn.Size = new System.Drawing.Size(50, 21);
             this.VeganFoodYesRadioBtn.TabIndex = 19;
-            this.VeganFoodYesRadioBtn.TabStop = true;
             this.VeganFoodYesRadioBtn.Text = "Yes";
             this.VeganFoodYesRadioBtn.UseVisualStyleBackColor = true;
             // 
             // PriceFoodTextBox
             // 
-            this.PriceFoodTextBox.Location = new System.Drawing.Point(239, 119);
+            this.PriceFoodTextBox.Location = new System.Drawing.Point(239, 160);
             this.PriceFoodTextBox.Name = "PriceFoodTextBox";
             this.PriceFoodTextBox.Size = new System.Drawing.Size(170, 20);
             this.PriceFoodTextBox.TabIndex = 22;
@@ -155,7 +155,7 @@
             // 
             // TimeFoodText
             // 
-            this.TimeFoodText.Location = new System.Drawing.Point(239, 163);
+            this.TimeFoodText.Location = new System.Drawing.Point(239, 120);
             this.TimeFoodText.Name = "TimeFoodText";
             this.TimeFoodText.Size = new System.Drawing.Size(170, 20);
             this.TimeFoodText.TabIndex = 24;
