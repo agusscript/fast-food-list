@@ -59,7 +59,7 @@
             this.NameFoodTextBox.Location = new System.Drawing.Point(239, 77);
             this.NameFoodTextBox.Name = "NameFoodTextBox";
             this.NameFoodTextBox.Size = new System.Drawing.Size(170, 20);
-            this.NameFoodTextBox.TabIndex = 6;
+            this.NameFoodTextBox.TabIndex = 1;
             // 
             // NameFoodLabel
             // 
@@ -109,7 +109,7 @@
             this.VeganFoodGroupBox.Location = new System.Drawing.Point(171, 249);
             this.VeganFoodGroupBox.Name = "VeganFoodGroupBox";
             this.VeganFoodGroupBox.Size = new System.Drawing.Size(238, 55);
-            this.VeganFoodGroupBox.TabIndex = 18;
+            this.VeganFoodGroupBox.TabIndex = 5;
             this.VeganFoodGroupBox.TabStop = false;
             this.VeganFoodGroupBox.Text = "Vegan";
             // 
@@ -120,7 +120,7 @@
             this.VeganFoodNoRadioBtn.Location = new System.Drawing.Point(159, 19);
             this.VeganFoodNoRadioBtn.Name = "VeganFoodNoRadioBtn";
             this.VeganFoodNoRadioBtn.Size = new System.Drawing.Size(44, 21);
-            this.VeganFoodNoRadioBtn.TabIndex = 20;
+            this.VeganFoodNoRadioBtn.TabIndex = 9;
             this.VeganFoodNoRadioBtn.TabStop = true;
             this.VeganFoodNoRadioBtn.Text = "No";
             this.VeganFoodNoRadioBtn.UseVisualStyleBackColor = true;
@@ -131,7 +131,7 @@
             this.VeganFoodYesRadioBtn.Location = new System.Drawing.Point(87, 19);
             this.VeganFoodYesRadioBtn.Name = "VeganFoodYesRadioBtn";
             this.VeganFoodYesRadioBtn.Size = new System.Drawing.Size(50, 21);
-            this.VeganFoodYesRadioBtn.TabIndex = 19;
+            this.VeganFoodYesRadioBtn.TabIndex = 8;
             this.VeganFoodYesRadioBtn.Text = "Yes";
             this.VeganFoodYesRadioBtn.UseVisualStyleBackColor = true;
             // 
@@ -140,7 +140,7 @@
             this.PriceFoodTextBox.Location = new System.Drawing.Point(239, 160);
             this.PriceFoodTextBox.Name = "PriceFoodTextBox";
             this.PriceFoodTextBox.Size = new System.Drawing.Size(170, 20);
-            this.PriceFoodTextBox.TabIndex = 22;
+            this.PriceFoodTextBox.TabIndex = 3;
             // 
             // AddFoodBtn
             // 
@@ -148,7 +148,7 @@
             this.AddFoodBtn.Location = new System.Drawing.Point(239, 332);
             this.AddFoodBtn.Name = "AddFoodBtn";
             this.AddFoodBtn.Size = new System.Drawing.Size(150, 29);
-            this.AddFoodBtn.TabIndex = 23;
+            this.AddFoodBtn.TabIndex = 6;
             this.AddFoodBtn.Text = "Add Food";
             this.AddFoodBtn.UseVisualStyleBackColor = true;
             this.AddFoodBtn.Click += new System.EventHandler(this.AddFoodBtn_Click);
@@ -158,14 +158,14 @@
             this.TimeFoodText.Location = new System.Drawing.Point(239, 120);
             this.TimeFoodText.Name = "TimeFoodText";
             this.TimeFoodText.Size = new System.Drawing.Size(170, 20);
-            this.TimeFoodText.TabIndex = 24;
+            this.TimeFoodText.TabIndex = 2;
             // 
             // CaloriesFoodText
             // 
             this.CaloriesFoodText.Location = new System.Drawing.Point(239, 205);
             this.CaloriesFoodText.Name = "CaloriesFoodText";
             this.CaloriesFoodText.Size = new System.Drawing.Size(170, 20);
-            this.CaloriesFoodText.TabIndex = 25;
+            this.CaloriesFoodText.TabIndex = 4;
             // 
             // AddFoodForm
             // 

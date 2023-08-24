@@ -14,17 +14,37 @@ namespace AppWindowsForm
 
         private void AddFoodBtn_Click(object sender, EventArgs e)
         {
-            bool validatedEmptyFood = ValidateEmptyFields(out string errorMessage);
+            bool validatedEmpty = ValidateEmptyFields(out string errorMessage);
+            bool validatedTypes = ValidateTypes(out string errorMessageType);
 
-            if (validatedEmptyFood)
+            if (validatedEmpty)
             {
-                AddNewFood();
-                this.DialogResult = DialogResult.OK;
+                if (validatedTypes)
+                {
+                    AddNewFood();
+                    this.DialogResult = DialogResult.OK;
+                }
+                else
+                    MessageBox.Show(errorMessageType, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
-            {
                 MessageBox.Show(errorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+        }
+
+        private bool ValidateTypes(out string errorMessageType)
+        {
+            errorMessageType = string.Empty;
+
+            if (!int.TryParse(TimeFoodText.Text, out int time))
+                errorMessageType += "The Time field can only be an integer type." + Environment.NewLine;
+
+            if (!int.TryParse(PriceFoodTextBox.Text, out int price))
+                errorMessageType += "The Price field can only be an integer type." + Environment.NewLine;
+
+            if (!int.TryParse(CaloriesFoodText.Text, out int calories))
+                errorMessageType += "The Calories field can only be an integer type." + Environment.NewLine;
+
+            return errorMessageType == string.Empty;
         }
 
         private bool ValidateEmptyFields(out string errorMessage)
