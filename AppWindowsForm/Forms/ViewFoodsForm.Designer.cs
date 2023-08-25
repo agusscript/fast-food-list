@@ -42,18 +42,18 @@
             this.foodsDataGrid.AllowUserToDeleteRows = false;
             this.foodsDataGrid.AllowUserToResizeColumns = false;
             this.foodsDataGrid.AllowUserToResizeRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.foodsDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.foodsDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.foodsDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.foodsDataGrid.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.foodsDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -64,43 +64,45 @@
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.ForestGreen;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.foodsDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
-            this.foodsDataGrid.Location = new System.Drawing.Point(12, 66);
+            this.foodsDataGrid.Location = new System.Drawing.Point(12, 56);
             this.foodsDataGrid.MultiSelect = false;
             this.foodsDataGrid.Name = "foodsDataGrid";
             this.foodsDataGrid.ReadOnly = true;
             this.foodsDataGrid.RowHeadersVisible = false;
             this.foodsDataGrid.RowHeadersWidth = 80;
             this.foodsDataGrid.ShowEditingIcon = false;
-            this.foodsDataGrid.Size = new System.Drawing.Size(576, 372);
+            this.foodsDataGrid.Size = new System.Drawing.Size(620, 423);
             this.foodsDataGrid.TabIndex = 5;
             // 
             // ViewFoodsLabel
             // 
-            this.ViewFoodsLabel.AutoSize = true;
-            this.ViewFoodsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ViewFoodsLabel.Location = new System.Drawing.Point(12, 18);
+            this.ViewFoodsLabel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ViewFoodsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewFoodsLabel.ForeColor = System.Drawing.Color.White;
+            this.ViewFoodsLabel.Location = new System.Drawing.Point(12, 9);
             this.ViewFoodsLabel.Name = "ViewFoodsLabel";
-            this.ViewFoodsLabel.Size = new System.Drawing.Size(141, 29);
+            this.ViewFoodsLabel.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.ViewFoodsLabel.Size = new System.Drawing.Size(97, 34);
             this.ViewFoodsLabel.TabIndex = 6;
-            this.ViewFoodsLabel.Text = "View Foods";
+            this.ViewFoodsLabel.Text = "Foods";
             // 
             // ViewFoodsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 450);
+            this.ClientSize = new System.Drawing.Size(644, 491);
             this.Controls.Add(this.ViewFoodsLabel);
             this.Controls.Add(this.foodsDataGrid);
+            this.MinimumSize = new System.Drawing.Size(660, 530);
             this.Name = "ViewFoodsForm";
             this.Text = "View Foods";
             this.Load += new System.EventHandler(this.ViewFoodsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.foodsDataGrid)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
