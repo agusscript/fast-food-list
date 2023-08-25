@@ -1,5 +1,4 @@
-﻿using AppWindowsForm.Entities;
-using System;
+﻿using System;
 using System.Text.Json;
 using System.Windows.Forms;
 

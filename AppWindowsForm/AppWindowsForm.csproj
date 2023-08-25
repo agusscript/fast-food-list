@@ -74,8 +74,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\FoodRepository.cs" />
-    <Compile Include="Entities\JsonFile.cs" />
+    <Compile Include="Classes\FoodRepository.cs" />
+    <Compile Include="Classes\JsonFile.cs" />
     <Compile Include="Forms\AddFoodForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +88,12 @@
     </Compile>
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RemoveFoodsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RemoveFoodsForm.Designer.cs">
+      <DependentUpon>RemoveFoodsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ViewFoodsForm.cs">
       <SubType>Form</SubType>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RemoveFoodsForm.resx">
+      <DependentUpon>RemoveFoodsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewFoodsForm.resx">
       <DependentUpon>ViewFoodsForm.cs</DependentUpon>

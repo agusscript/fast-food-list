@@ -1,82 +1,75 @@
 [
   {
-    "id": 0,
-    "nombre": "Empanadas de Jamon y queso",
-    "tiempo": 20,
-    "precio": 350,
-    "calorias": 100,
-    "vegana": false
+    "Id": 0,
+    "Name": "Empanadas de Jamon y queso",
+    "Time": 20,
+    "Price": 350,
+    "Calories": 100,
+    "Vegan": false
   },
   {
-    "id": 1,
-    "nombre": "Tortilla de papas",
-    "tiempo": 20,
-    "precio": 1350,
-    "calorias": 180,
-    "vegana": false
+    "Id": 1,
+    "Name": "Tortilla de papas",
+    "Time": 20,
+    "Price": 1350,
+    "Calories": 180,
+    "Vegan": false
   },
   {
-    "id": 2,
-    "nombre": "Salsa pesto",
-    "tiempo": 90,
-    "precio": 950,
-    "calorias": 180,
-    "vegana": true
+    "Id": 2,
+    "Name": "Salsa pesto",
+    "Time": 90,
+    "Price": 950,
+    "Calories": 180,
+    "Vegan": true
   },
   {
-    "id": 4,
-    "nombre": "Licuado de banana",
-    "tiempo": 10,
-    "precio": 800,
-    "calorias": 380,
-    "vegana": false
+    "Id": 4,
+    "Name": "Licuado de banana",
+    "Time": 10,
+    "Price": 800,
+    "Calories": 380,
+    "Vegan": false
   },
   {
-    "id": 5,
-    "nombre": "Jugo de naranja",
-    "tiempo": 5,
-    "precio": 500,
-    "calorias": 380,
-    "vegana": false
+    "Id": 5,
+    "Name": "Jugo de naranja",
+    "Time": 5,
+    "Price": 500,
+    "Calories": 380,
+    "Vegan": false
   },
   {
-    "id": 6,
-    "nombre": "Tarta de pescado",
-    "tiempo": 45,
-    "precio": 280,
-    "calorias": 190,
-    "vegana": false
+    "Id": 6,
+    "Name": "Tarta de pescado",
+    "Time": 45,
+    "Price": 280,
+    "Calories": 190,
+    "Vegan": false
   },
   {
-    "id": 7,
-    "nombre": "Sushi",
-    "tiempo": 35,
-    "precio": 1250,
-    "calorias": 320,
-    "vegana": false
+    "Id": 7,
+    "Name": "Sushi",
+    "Time": 35,
+    "Price": 1250,
+    "Calories": 320,
+    "Vegan": false
   },
   {
-    "id": 8,
-    "nombre": "\u00D1oquis",
-    "tiempo": 45,
-    "precio": 470,
-    "calorias": 230,
-    "vegana": false
+    "Id": 8,
+    "Name": "\u00D1oquis",
+    "Time": 45,
+    "Price": 470,
+    "Calories": 230,
+    "Vegan": false
   },
   {
-    "id": 9,
-    "nombre": "Guiso de arroz",
-    "tiempo": 45,
-    "precio": 540,
-    "calorias": 300,
-    "vegana": false
+    "Id": 9,
+    "Name": "Guiso de arroz",
+    "Time": 45,
+    "Price": 540,
+    "Calories": 300,
+    "Vegan": false
   },
-  {
-    "id": 10,
-    "nombre": "Tofu",
-    "tiempo": 20,
-    "precio": 780,
-    "calorias": 310,
-    "vegana": true
-  }
+  { "Id": 10, "Name": "Tofu", "Time": 20, "Price": 780, "Calories": 310, "Vegan": true }
 ]

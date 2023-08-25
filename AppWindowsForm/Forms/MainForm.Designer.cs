@@ -128,6 +128,7 @@
             this.DeleteFoodsBtn.TabIndex = 11;
             this.DeleteFoodsBtn.Text = "Delete Foods";
             this.DeleteFoodsBtn.UseVisualStyleBackColor = true;
+            this.DeleteFoodsBtn.Click += new System.EventHandler(this.DeleteFoodsBtn_Click);
             // 
             // MainForm
             // 

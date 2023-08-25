@@ -1,5 +1,4 @@
-﻿using AppWindowsForm.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
@@ -17,6 +16,7 @@ namespace AppWindowsForm.Forms
         private void ViewFoodsForm_Load(object sender, EventArgs e)
         {
             ShowFoodsDataGrid(JsonFile.Data);
+            ViewFoodsLabel.Text = $"Total Foods: {FoodRepository.Foods.Count}";
         }
 
         private void ShowFoodsDataGrid(string file)

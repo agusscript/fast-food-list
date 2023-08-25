@@ -1,5 +1,4 @@
-﻿using AppWindowsForm.Entities;
-using AppWindowsForm.Forms;
+﻿using AppWindowsForm.Forms;
 using System;
 using System.Windows.Forms;
 
@@ -34,6 +33,12 @@ namespace AppWindowsForm
         {
             AddFoodForm addFoodsForm = new AddFoodForm();
             addFoodsForm.ShowDialog();
+        }
+
+        private void DeleteFoodsBtn_Click(object sender, EventArgs e)
+        {
+            RemoveFoodsForm removeFoodsForm = new RemoveFoodsForm();
+            removeFoodsForm.ShowDialog();
         }
     }
 }

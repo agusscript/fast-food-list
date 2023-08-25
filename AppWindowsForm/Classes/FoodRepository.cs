@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AppWindowsForm.Entities
+namespace AppWindowsForm
 {
     class FoodRepository
     {
@@ -14,6 +14,11 @@ namespace AppWindowsForm.Entities
         public static void AddFood(Food food)
         {
             Foods.Add(food);
+        }
+
+        public static void RemoveFood(int id)
+        {
+            Foods.RemoveAll(food => food.Id.Equals(id));
         }
     }
 }
