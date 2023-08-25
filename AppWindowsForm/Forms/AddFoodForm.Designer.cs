@@ -184,6 +184,7 @@
             this.Controls.Add(this.NameFoodTextBox);
             this.Controls.Add(this.titleAddFoodLbl);
             this.Name = "AddFoodForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Foods";
             this.VeganFoodGroupBox.ResumeLayout(false);
             this.VeganFoodGroupBox.PerformLayout();

@@ -24,6 +24,14 @@
     "Vegan": true
   },
   {
+    "Id": 3,
+    "Name": "Tofu",
+    "Time": 40,
+    "Price": 1450,
+    "Calories": 280,
+    "Vegan": true
+  },
+  {
     "Id": 4,
     "Name": "Licuado de banana",
     "Time": 10,
@@ -71,5 +79,12 @@
     "Calories": 300,
     "Vegan": false
   },
-  { "Id": 10, "Name": "Tofu", "Time": 20, "Price": 780, "Calories": 310, "Vegan": true }
+  {
+    "Id": 10,
+    "Name": "Ensalada simple",
+    "Time": 15,
+    "Price": 480,
+    "Calories": 110,
+    "Vegan": true
+  }
 ]

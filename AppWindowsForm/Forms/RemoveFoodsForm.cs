@@ -20,6 +20,17 @@ namespace AppWindowsForm.Forms
 
         private void DeleteFoodBtn_Click(object sender, EventArgs e)
         {
+            var confirmResult = MessageBox.Show("Are you sure to delete this food ?", "Confirm Delete !", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (confirmResult == DialogResult.OK)
+            {
+                DeleteFood();
+                ShowFoodsDataGrid(JsonFile.Data);
+            }
+        }
+
+        private void DeleteFood()
+        {
             int selectedFoodId = int.Parse(RemoveFoodsDataGrid.SelectedRows[0].Cells[0].Value.ToString());
 
             FoodRepository.RemoveFood(selectedFoodId);
@@ -27,8 +38,6 @@ namespace AppWindowsForm.Forms
             string newFoodData = JsonSerializer.Serialize(FoodRepository.Foods);
 
             JsonFile.Save(newFoodData);
-
-            ShowFoodsDataGrid(JsonFile.Data);
         }
 
         private void ShowFoodsDataGrid(string file)

@@ -40,6 +40,12 @@ namespace AppWindowsForm
             RemoveFoodsForm removeFoodsForm = new RemoveFoodsForm();
             removeFoodsForm.ShowDialog();
         }
+
+        private void EditFoodsBtn_Click(object sender, EventArgs e)
+        {
+            EditFoodsForm editFoodsForm = new EditFoodsForm();
+            editFoodsForm.ShowDialog();
+        }
     }
 }
 

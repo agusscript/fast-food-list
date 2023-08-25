@@ -37,6 +37,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.JsonFileToolStripLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.DeleteFoodsBtn = new System.Windows.Forms.Button();
+            this.EditFoodsBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MainImgPictureBox)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -122,7 +123,7 @@
             this.DeleteFoodsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DeleteFoodsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteFoodsBtn.ForeColor = System.Drawing.Color.Black;
-            this.DeleteFoodsBtn.Location = new System.Drawing.Point(379, 320);
+            this.DeleteFoodsBtn.Location = new System.Drawing.Point(379, 343);
             this.DeleteFoodsBtn.Name = "DeleteFoodsBtn";
             this.DeleteFoodsBtn.Size = new System.Drawing.Size(135, 30);
             this.DeleteFoodsBtn.TabIndex = 11;
@@ -130,12 +131,26 @@
             this.DeleteFoodsBtn.UseVisualStyleBackColor = true;
             this.DeleteFoodsBtn.Click += new System.EventHandler(this.DeleteFoodsBtn_Click);
             // 
+            // EditFoodsBtn
+            // 
+            this.EditFoodsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.EditFoodsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditFoodsBtn.ForeColor = System.Drawing.Color.Black;
+            this.EditFoodsBtn.Location = new System.Drawing.Point(379, 280);
+            this.EditFoodsBtn.Name = "EditFoodsBtn";
+            this.EditFoodsBtn.Size = new System.Drawing.Size(135, 30);
+            this.EditFoodsBtn.TabIndex = 12;
+            this.EditFoodsBtn.Text = "Edit Foods";
+            this.EditFoodsBtn.UseVisualStyleBackColor = true;
+            this.EditFoodsBtn.Click += new System.EventHandler(this.EditFoodsBtn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(584, 441);
+            this.Controls.Add(this.EditFoodsBtn);
             this.Controls.Add(this.DeleteFoodsBtn);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.MainImgPictureBox);
@@ -166,5 +181,6 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel JsonFileToolStripLabel;
         private System.Windows.Forms.Button DeleteFoodsBtn;
+        private System.Windows.Forms.Button EditFoodsBtn;
     }
 }
