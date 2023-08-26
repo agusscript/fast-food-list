@@ -83,23 +83,11 @@
       <DependentUpon>AddFoodForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Food.cs" />
-    <Compile Include="Forms\EditFoodsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EditFoodsForm.Designer.cs">
-      <DependentUpon>EditFoodsForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\RemoveFoodsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\RemoveFoodsForm.Designer.cs">
-      <DependentUpon>RemoveFoodsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ViewFoodsForm.cs">
       <SubType>Form</SubType>
@@ -112,14 +100,8 @@
     <EmbeddedResource Include="Forms\AddFoodForm.resx">
       <DependentUpon>AddFoodForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EditFoodsForm.resx">
-      <DependentUpon>EditFoodsForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RemoveFoodsForm.resx">
-      <DependentUpon>RemoveFoodsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewFoodsForm.resx">
       <DependentUpon>ViewFoodsForm.cs</DependentUpon>

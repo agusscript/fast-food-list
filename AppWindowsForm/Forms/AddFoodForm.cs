@@ -34,6 +34,9 @@ namespace AppWindowsForm
         {
             errorMessageType = string.Empty;
 
+            if (!int.TryParse(IdFoodTextBox.Text, out int id))
+                errorMessageType += "The Id field can only be an integer type." + Environment.NewLine;
+
             if (!int.TryParse(TimeFoodText.Text, out int time))
                 errorMessageType += "The Time field can only be an integer type." + Environment.NewLine;
 
@@ -49,6 +52,9 @@ namespace AppWindowsForm
         private bool ValidateEmptyFields(out string errorMessage)
         {
             errorMessage = string.Empty;
+
+            if (string.IsNullOrEmpty(IdFoodTextBox.Text))
+                errorMessage += "The Id field cannot be empty." + Environment.NewLine;
 
             if (string.IsNullOrEmpty(NameFoodTextBox.Text))
                 errorMessage += "The Name field cannot be empty." + Environment.NewLine;

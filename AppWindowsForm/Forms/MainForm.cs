@@ -18,33 +18,25 @@ namespace AppWindowsForm
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 JsonFile.Data = openFileDialog.FileName;
-                JsonFileToolStripLabel.Text = JsonFile.Data;
+                UpdateToolStripLabel();
                 MessageBox.Show("The json file was selected correctly.", "Json file Select", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void ViewFoodsBtn_Click(object sender, EventArgs e)
         {
-            ViewFoodsForm viewFoodsForm = new ViewFoodsForm();
-            viewFoodsForm.ShowDialog();
+            if (!string.IsNullOrEmpty(JsonFile.Data))
+            {
+                ViewFoodsForm viewFoodsForm = new ViewFoodsForm();
+                viewFoodsForm.ShowDialog();
+            }
+            else
+                MessageBox.Show("No json file selected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void AddFoodsBtn_Click(object sender, EventArgs e)
+        private void UpdateToolStripLabel()
         {
-            AddFoodForm addFoodsForm = new AddFoodForm();
-            addFoodsForm.ShowDialog();
-        }
-
-        private void DeleteFoodsBtn_Click(object sender, EventArgs e)
-        {
-            RemoveFoodsForm removeFoodsForm = new RemoveFoodsForm();
-            removeFoodsForm.ShowDialog();
-        }
-
-        private void EditFoodsBtn_Click(object sender, EventArgs e)
-        {
-            EditFoodsForm editFoodsForm = new EditFoodsForm();
-            editFoodsForm.ShowDialog();
+            JsonFileToolStripLabel.Text = JsonFile.Data;
         }
     }
 }
