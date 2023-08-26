@@ -69,7 +69,7 @@ namespace AppWindowsForm
         {
             FoodRepository.AddFood(new Food
             {
-                Id = FoodRepository.Foods.Count + 1,
+                Id = int.Parse(IdFoodTextBox.Text),
                 Name = NameFoodTextBox.Text,
                 Time = int.Parse(TimeFoodText.Text),
                 Price = int.Parse(PriceFoodTextBox.Text),

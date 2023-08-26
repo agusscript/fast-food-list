@@ -41,6 +41,8 @@
             this.AddFoodBtn = new System.Windows.Forms.Button();
             this.TimeFoodText = new System.Windows.Forms.TextBox();
             this.CaloriesFoodText = new System.Windows.Forms.TextBox();
+            this.IdFoodLabel = new System.Windows.Forms.Label();
+            this.IdFoodTextBox = new System.Windows.Forms.TextBox();
             this.VeganFoodGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,16 +58,16 @@
             // 
             // NameFoodTextBox
             // 
-            this.NameFoodTextBox.Location = new System.Drawing.Point(239, 77);
+            this.NameFoodTextBox.Location = new System.Drawing.Point(239, 99);
             this.NameFoodTextBox.Name = "NameFoodTextBox";
             this.NameFoodTextBox.Size = new System.Drawing.Size(170, 20);
-            this.NameFoodTextBox.TabIndex = 1;
+            this.NameFoodTextBox.TabIndex = 2;
             // 
             // NameFoodLabel
             // 
             this.NameFoodLabel.AutoSize = true;
             this.NameFoodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameFoodLabel.Location = new System.Drawing.Point(182, 78);
+            this.NameFoodLabel.Location = new System.Drawing.Point(177, 100);
             this.NameFoodLabel.Name = "NameFoodLabel";
             this.NameFoodLabel.Size = new System.Drawing.Size(45, 17);
             this.NameFoodLabel.TabIndex = 7;
@@ -75,7 +77,7 @@
             // 
             this.TimeFoodLabel.AutoSize = true;
             this.TimeFoodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeFoodLabel.Location = new System.Drawing.Point(125, 121);
+            this.TimeFoodLabel.Location = new System.Drawing.Point(120, 147);
             this.TimeFoodLabel.Name = "TimeFoodLabel";
             this.TimeFoodLabel.Size = new System.Drawing.Size(102, 17);
             this.TimeFoodLabel.TabIndex = 8;
@@ -85,7 +87,7 @@
             // 
             this.PriceFoodLabel.AutoSize = true;
             this.PriceFoodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriceFoodLabel.Location = new System.Drawing.Point(182, 161);
+            this.PriceFoodLabel.Location = new System.Drawing.Point(177, 195);
             this.PriceFoodLabel.Name = "PriceFoodLabel";
             this.PriceFoodLabel.Size = new System.Drawing.Size(40, 17);
             this.PriceFoodLabel.TabIndex = 10;
@@ -95,7 +97,7 @@
             // 
             this.CaloriesFoodLabel.AutoSize = true;
             this.CaloriesFoodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CaloriesFoodLabel.Location = new System.Drawing.Point(168, 205);
+            this.CaloriesFoodLabel.Location = new System.Drawing.Point(163, 238);
             this.CaloriesFoodLabel.Name = "CaloriesFoodLabel";
             this.CaloriesFoodLabel.Size = new System.Drawing.Size(59, 17);
             this.CaloriesFoodLabel.TabIndex = 12;
@@ -106,10 +108,10 @@
             this.VeganFoodGroupBox.Controls.Add(this.VeganFoodNoRadioBtn);
             this.VeganFoodGroupBox.Controls.Add(this.VeganFoodYesRadioBtn);
             this.VeganFoodGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VeganFoodGroupBox.Location = new System.Drawing.Point(171, 249);
+            this.VeganFoodGroupBox.Location = new System.Drawing.Point(166, 282);
             this.VeganFoodGroupBox.Name = "VeganFoodGroupBox";
-            this.VeganFoodGroupBox.Size = new System.Drawing.Size(238, 55);
-            this.VeganFoodGroupBox.TabIndex = 5;
+            this.VeganFoodGroupBox.Size = new System.Drawing.Size(243, 55);
+            this.VeganFoodGroupBox.TabIndex = 6;
             this.VeganFoodGroupBox.TabStop = false;
             this.VeganFoodGroupBox.Text = "Vegan";
             // 
@@ -137,41 +139,60 @@
             // 
             // PriceFoodTextBox
             // 
-            this.PriceFoodTextBox.Location = new System.Drawing.Point(239, 160);
+            this.PriceFoodTextBox.Location = new System.Drawing.Point(239, 194);
             this.PriceFoodTextBox.Name = "PriceFoodTextBox";
             this.PriceFoodTextBox.Size = new System.Drawing.Size(170, 20);
-            this.PriceFoodTextBox.TabIndex = 3;
+            this.PriceFoodTextBox.TabIndex = 4;
             // 
             // AddFoodBtn
             // 
             this.AddFoodBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddFoodBtn.Location = new System.Drawing.Point(239, 332);
+            this.AddFoodBtn.Location = new System.Drawing.Point(239, 364);
             this.AddFoodBtn.Name = "AddFoodBtn";
-            this.AddFoodBtn.Size = new System.Drawing.Size(150, 29);
-            this.AddFoodBtn.TabIndex = 6;
+            this.AddFoodBtn.Size = new System.Drawing.Size(135, 30);
+            this.AddFoodBtn.TabIndex = 7;
             this.AddFoodBtn.Text = "Add Food";
             this.AddFoodBtn.UseVisualStyleBackColor = true;
             this.AddFoodBtn.Click += new System.EventHandler(this.AddFoodBtn_Click);
             // 
             // TimeFoodText
             // 
-            this.TimeFoodText.Location = new System.Drawing.Point(239, 120);
+            this.TimeFoodText.Location = new System.Drawing.Point(239, 146);
             this.TimeFoodText.Name = "TimeFoodText";
             this.TimeFoodText.Size = new System.Drawing.Size(170, 20);
-            this.TimeFoodText.TabIndex = 2;
+            this.TimeFoodText.TabIndex = 3;
             // 
             // CaloriesFoodText
             // 
-            this.CaloriesFoodText.Location = new System.Drawing.Point(239, 205);
+            this.CaloriesFoodText.Location = new System.Drawing.Point(239, 237);
             this.CaloriesFoodText.Name = "CaloriesFoodText";
             this.CaloriesFoodText.Size = new System.Drawing.Size(170, 20);
-            this.CaloriesFoodText.TabIndex = 4;
+            this.CaloriesFoodText.TabIndex = 5;
+            // 
+            // IdFoodLabel
+            // 
+            this.IdFoodLabel.AutoSize = true;
+            this.IdFoodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdFoodLabel.Location = new System.Drawing.Point(203, 56);
+            this.IdFoodLabel.Name = "IdFoodLabel";
+            this.IdFoodLabel.Size = new System.Drawing.Size(19, 17);
+            this.IdFoodLabel.TabIndex = 13;
+            this.IdFoodLabel.Text = "Id";
+            // 
+            // IdFoodTextBox
+            // 
+            this.IdFoodTextBox.Location = new System.Drawing.Point(239, 55);
+            this.IdFoodTextBox.Name = "IdFoodTextBox";
+            this.IdFoodTextBox.Size = new System.Drawing.Size(170, 20);
+            this.IdFoodTextBox.TabIndex = 1;
             // 
             // AddFoodForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 398);
+            this.ClientSize = new System.Drawing.Size(608, 421);
+            this.Controls.Add(this.IdFoodTextBox);
+            this.Controls.Add(this.IdFoodLabel);
             this.Controls.Add(this.CaloriesFoodText);
             this.Controls.Add(this.TimeFoodText);
             this.Controls.Add(this.AddFoodBtn);
@@ -183,6 +204,8 @@
             this.Controls.Add(this.NameFoodLabel);
             this.Controls.Add(this.NameFoodTextBox);
             this.Controls.Add(this.titleAddFoodLbl);
+            this.MaximumSize = new System.Drawing.Size(624, 460);
+            this.MinimumSize = new System.Drawing.Size(624, 460);
             this.Name = "AddFoodForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Foods";
@@ -208,5 +231,7 @@
         private System.Windows.Forms.Button AddFoodBtn;
         private System.Windows.Forms.TextBox TimeFoodText;
         private System.Windows.Forms.TextBox CaloriesFoodText;
+        private System.Windows.Forms.Label IdFoodLabel;
+        private System.Windows.Forms.TextBox IdFoodTextBox;
     }
 }
