@@ -20,7 +20,6 @@ namespace AppWindowsForm.Forms
             TimeEditFoodText.Text = newFood.Time.ToString();
             PriceEditFoodTextBox.Text = newFood.Price.ToString();
             CaloriesEditFoodText.Text = newFood.Calories.ToString();
-            VeganFoodEditYesRadioBtn.Text = newFood.Vegan.ToString();
         }
 
         private void SaveFoodBtn_Click(object sender, System.EventArgs e)
@@ -48,7 +47,7 @@ namespace AppWindowsForm.Forms
             int timeEditedFood = int.Parse(TimeEditFoodText.Text);
             int priceEditedFood = int.Parse(PriceEditFoodTextBox.Text);
             int caloriesEditedFood = int.Parse(CaloriesEditFoodText.Text);
-            bool veganEditedFood = bool.Parse(VeganFoodEditYesRadioBtn.Text);
+            bool veganEditedFood = VeganFoodEditYesRadioBtn.Checked;
 
             Food newEditedFood = new Food(idEditedFood, nameEditedFood, timeEditedFood, priceEditedFood, caloriesEditedFood, veganEditedFood);
 
