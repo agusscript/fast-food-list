@@ -204,6 +204,7 @@
             this.Controls.Add(this.NameFoodLabel);
             this.Controls.Add(this.NameFoodTextBox);
             this.Controls.Add(this.titleAddFoodLbl);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(624, 460);
             this.MinimumSize = new System.Drawing.Size(624, 460);
             this.Name = "AddFoodForm";

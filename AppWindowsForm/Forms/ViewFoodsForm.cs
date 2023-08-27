@@ -29,9 +29,24 @@ namespace AppWindowsForm.Forms
 
         private void EditFoodBtn_Click(object sender, EventArgs e)
         {
-            int selectedFoodId = int.Parse(foodsDataGrid.SelectedRows[0].Cells[0].Value.ToString());
+            int idFood = int.Parse(foodsDataGrid.SelectedRows[0].Cells[0].Value.ToString());
+            string nameFood = foodsDataGrid.SelectedRows[0].Cells[1].Value.ToString();
+            int timeFood = int.Parse(foodsDataGrid.SelectedRows[0].Cells[2].Value.ToString());
+            int priceFood = int.Parse(foodsDataGrid.SelectedRows[0].Cells[3].Value.ToString());
+            int caloriesFood = int.Parse(foodsDataGrid.SelectedRows[0].Cells[4].Value.ToString());
+            bool veganFood = bool.Parse(foodsDataGrid.SelectedRows[0].Cells[5].Value.ToString());
 
-            MessageBox.Show(selectedFoodId.ToString());
+            Food foodToModify = new Food(idFood, nameFood, timeFood, priceFood, caloriesFood, veganFood);
+
+            EditFoodForm editFoodForm = new EditFoodForm(foodToModify);
+            DialogResult dialogResult = editFoodForm.ShowDialog();
+
+            if (dialogResult == DialogResult.OK)
+            {
+                FoodRepository.UpdateFood(idFood, editFoodForm.EditedFood);
+                ShowFoodsDataGrid(JsonFile.Data);
+                UpdateFoodsCount();
+            }
         }
 
         private void DeleteFoodBtn_Click(object sender, EventArgs e)
@@ -49,12 +64,7 @@ namespace AppWindowsForm.Forms
         private void DeleteFood()
         {
             int selectedFoodId = int.Parse(foodsDataGrid.SelectedRows[0].Cells[0].Value.ToString());
-
             FoodRepository.RemoveFood(selectedFoodId);
-
-            string newFoodData = JsonSerializer.Serialize(FoodRepository.Foods);
-
-            JsonFile.Save(newFoodData);
         }
 
         private void ShowFoodsDataGrid(string file)

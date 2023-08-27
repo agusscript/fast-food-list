@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text.Json;
 using System.Windows.Forms;
 
 namespace AppWindowsForm
@@ -21,7 +20,6 @@ namespace AppWindowsForm
                 if (validatedTypes)
                 {
                     AddNewFood();
-                    this.DialogResult = DialogResult.OK;
                 }
                 else
                     MessageBox.Show(errorMessageType, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -73,23 +71,20 @@ namespace AppWindowsForm
 
         private void AddNewFood()
         {
-            FoodRepository.AddFood(new Food
-            {
-                Id = int.Parse(IdFoodTextBox.Text),
-                Name = NameFoodTextBox.Text,
-                Time = int.Parse(TimeFoodText.Text),
-                Price = int.Parse(PriceFoodTextBox.Text),
-                Calories = int.Parse(CaloriesFoodText.Text),
-                Vegan = VeganFoodYesRadioBtn.Checked,
-            });
+            int foodId = int.Parse(IdFoodTextBox.Text);
+            string foodName = NameFoodTextBox.Text;
+            int foodTime = int.Parse(TimeFoodText.Text);
+            int foodPrice = int.Parse(PriceFoodTextBox.Text);
+            int foodCalories = int.Parse(CaloriesFoodText.Text);
+            bool foodVegan = VeganFoodYesRadioBtn.Checked;
 
-            string newFoodData = JsonSerializer.Serialize(FoodRepository.Foods);
+            Food newFood = new Food(foodId, foodName, foodTime, foodPrice, foodCalories, foodVegan);
 
-            JsonFile.Save(newFoodData);
+            FoodRepository.AddFood(newFood);
 
             MessageBox.Show("The new food was successfully added to the menu.", "Add Food", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            this.Close();
+            this.DialogResult = DialogResult.OK;
         }
     }
 }
