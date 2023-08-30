@@ -108,21 +108,15 @@ adjuntamos un ejemplo):
 
 - Validaciones comida
 
-![](assets/screenshots/type-validation-view.PNG)
-
 ![](assets/screenshots/empty-validation-view.PNG)
 
 ![](assets/screenshots/correct-add-food-view.PNG)
-
-![](assets/screenshots/food-added-view.PNG)
 
 - Vista formulario editar comida
 
 ![](assets/screenshots/edit-food-view.PNG)
 
-![](assets/screenshots/correct-edit-food-view.PNG)
-
 - Confirmación eliminar comida
 
-![](assets/screenshots/edit-food-view.PNG)
+![](assets/screenshots/delete-food-view.PNG)
 
